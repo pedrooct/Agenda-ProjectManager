@@ -1,0 +1,20 @@
+{
+    "name": "vagrant/silexrest",
+    "require": {
+	"tecnickcom/tcpdf": "^6.2",
+        "phpmailer/phpmailer": "^6.0",
+        "jeroendesloovere/vcard": "^1.6"
+	
+    },
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t public"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Pedro Costa & Paulo Bento"
+        }
+    ]
+}
