@@ -19,7 +19,10 @@ $vcard->addEmail($data['email']);
 $vcard->addPhoneNumber($data['contacto'], 'PREF;WORK');
 $vcard->addLabel('ufp');
 $vcard->addURL($data['cacifo_digital_id']);
-$vcard->addPhotoContent($img);
+if(!empty($img))
+{
+  $vcard->addPhotoContent($img);
+}
 //return vcard as a string
 $sendVcard=base64_encode($vcard->getOutput());
 
